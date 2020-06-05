@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- add our liddo icon -->
+        <link rel="icon" href="assets/imgs/bjc-icon-transparent.png">
+
+        <!-- Import Google stuff. Thank you Google <3 -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+        <!-- Bootstrap stuff for calendar -->
+        <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet' />
+
+        <!-- our style sheets; these MUST come after the bootstrap stuff to avoid being overriden. -->
+        <link href="assets/styles/globalStyles.css" type="text/css" rel="stylesheet">
+        <link href="assets/styles/weeklyschedule.css" type="text/css" rel="stylesheet">
+
+        <!-- Weekly Schedule Stylesheets -->
+        <link href="assets/fullcalendar/core/main.css" type="text/css" rel="stylesheet">
+        <link href="assets/fullcalendar/daygrid/main.css" type="text/css" rel="stylesheet">
+        <link href='assets/fullcalendar/timegrid/main.css' rel='stylesheet' />
+        <link href='assets/fullcalendar/bootstrap/main.css' rel='stylesheet' />
+
+        <!-- Weekly Schedule Scripts -->
+        <script src='assets/fullcalendar/core/main.js'></script>
+        <script src='assets/fullcalendar/daygrid/main.js'></script>
+        <script src='assets/fullcalendar/timegrid/main.js'></script>
+        <script src='assets/fullcalendar/google-calendar/main.js'></script>
+        <script src='assets/fullcalendar/bootstrap/main.js'></script>
+
+        <!-- This loads the calendar. -->
+        <script src="assets/scripts/weeklyschedule.js"></script>
+        <script src="assets/scripts/assignmentcalendar.js" type="module"></script>
+
+    </head>
+
+    <header>
+        <!-- Note that this does NOT change the webpage, but rather the tab content -->
+        <title>
+            The Beauty and Joy of Computing
+         </title>
+       
+        <div style="display: flex; flex-direction: row; align-items: flex-end;">
+            <img src="assets/imgs/bjc-icon-transparent.png" style="max-height: 50px; max-width: 50px;">
+            <h1 style="margin-left: 20px;">
+                CS10: The Beauty and Joy of Computing
+            </h1>
+        </div>
+
+        <!-- Navigation Bar. -->
+        <nav style="margin-top: 20px;">
+            <a href="index.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        home
+                    </span>
+                    <div class="label">Home</div>
+                </div>
+            </a>
+            <a href="/assets/html/lectures.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        speaker_notes
+                    </span>
+                    <div class="label">Lecture</div>
+                </div>
+            </a>
+            <a href="/assets/html/labs.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        laptop
+                    </span>
+                    <div class="label">Labs</div>
+                </div>
+            </a>
+            <a href="/assets/html/discussion.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        people
+                    </span>
+                    <div class="label">Discussion</div>
+                </div>
+            </a>
+            <a href="/assets/html/syllabus.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        menu_book
+                    </span>
+                    <div class="label">Syllabus</div>
+                </div>
+            </a>
+            <a href="/assets/html/staff.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        contact_mail
+                    </span>
+                    <div class="label">Staff</div>
+                </div>
+            </a>
+            <a href="/assets/html/resources.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        library_books
+                    </span>
+                    <div class="label">Resources</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <body>
+        <!-- Weekly Schedule starts here. -->
+        <div style="margin-bottom: 80px;">
+            <h2>
+                This week in CS10
+            </h2>
+
+            <div class="card vertical" ">
+
+                <!-- Weekly Content starts here. -->
+                <div class="horizontalContent" id="weekContent">
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Lectures
+                        </h3>
+    
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <a href="assets/html/labs.html">
+                                    <div class="label">
+                                        <span class="material-icons-round">
+                                            videocam
+                                        </span>
+                                        <div>
+                                            webcast
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Labs
+                        </h3>
+    
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Discussions
+                        </h3>
+    
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    
+    
+                    <!-- Empty Div to account for space-evenly in flexbox -->
+                    <div></div>
+                </div>
+                <h3 class="contentHeader">
+                    Weekly Calendar
+                </h3>
+                <div id="weekschedule"></div>
+                <!-- Weekly Content ends here. -->
+                
+                
+            </div>
+            <!-- Huh, why is it here???? -->
+        </div>
+        <!-- Weekly Schedule ends here. -->
+        <div id="assignmentCal">
+            <h2>
+                Assignment Calendar
+            </h2>
+            <!-- <div class="card vertical">
+                <div class="calendarHeader">
+                    Week 1
+                </div>
+                <div class="horizontalContent">
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Lectures
+                        </h3>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Labs
+                        </h3>
+    
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="scheduleContent">
+                        <h3 class="contentHeader">
+                            Discussions
+                        </h3>
+    
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 1
+                                </div>
+                                <div class="itemName">
+                                    Welcome to CS10!
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="contentItem">
+    
+                            <div class="itemTitle">
+                                <div class="itemNum">
+                                    Lecture 2
+                                </div>
+                                <div class="itemName">
+                                    Abstraction
+                                </div>
+                                <div class="itemSubtitle">
+                                    Presented by Dan Garcia
+                                </div>
+                            </div>
+    
+                            <div class="itemIcons">
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        videocam
+                                    </span>
+                                    <div>
+                                        webcast
+                                    </div>
+                                </div>
+                                <div class="label">
+                                    <span class="material-icons-round">
+                                        description
+                                    </span>
+                                    <div>
+                                        notes
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </body>
+</html>

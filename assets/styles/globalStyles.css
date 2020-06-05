@@ -1,0 +1,226 @@
+/* General */
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body Style */
+body {
+    margin: 0px;
+    padding: 20px 10vw 20px 10vw;
+    /* background-color: #e8f7ff; */
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 50vw;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    margin-bottom: 60px;
+}
+
+.verticalContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontalContent {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+/* Header Styles */
+h1 {
+    font-weight: 200;
+    font-size: 28px;
+    color: #343f45;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #343f45;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #343f45;
+}
+
+/* Navigation Bar Styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+
+    transition: all .15s ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #007bff;  
+}
+
+a:hover {
+
+    transform: scale(1.2);
+    text-decoration: none;
+
+}
+
+.navlabel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+}
+
+.navlabel .label {
+
+    margin-left: 5px;
+
+    font-size: 18px;
+    font-weight: 200;
+
+}
+
+/* Card Styling */
+
+.card {
+    /* Appearances */
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #bdbdbd;
+    background-color: white;
+
+    /* Display */
+    display: flex;
+
+    /* Spacing */
+    padding: 5px 15px;
+    margin-bottom: 20px;
+
+    overflow: scroll;
+}
+
+/* 
+    These two subclasses reuse the original card class,
+    but flex in different directions depending on need.
+*/
+.card.horizontal { 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.card.vertical { 
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Icon Styling goes here. */
+.iconbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    color: #53afff;
+
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.iconlabel {
+
+    font-size: 10px;
+
+}
+
+/* Weekly Schedule Formatting */
+
+.scheduleContent {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    min-width: 300px;
+
+}
+
+.contentHeader {
+    font-size: 20px;
+}
+
+.contentItem {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.itemTitle {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+
+    margin-bottom: 14px;
+}
+
+.itemNum {
+    font-size: 14px;
+    color: #1c9dff;
+}
+
+.itemName {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.itemName-small {
+    /* This is no longer being used for now. */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.itemSubtitle {
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.itemIcons {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #007bff;
+
+    margin-left: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+
+    font-size: 12px;
+}
