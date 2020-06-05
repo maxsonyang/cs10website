@@ -130,7 +130,7 @@ a:hover {
 .iconbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     color: #53afff;
 

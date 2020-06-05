@@ -283,7 +283,9 @@ function createTitle(itemNum, itemName, itemSubtitle)
     // TODO: fix in future cuz directly appending is a security vulnerability.
     itemNumDiv.innerText += itemNum;
     itemNameDiv.innerText += itemName;
-    itemSubtitleDiv.innerText += itemSubtitle;
+    if (itemSubtitle) {
+        itemSubtitleDiv.innerText += itemSubtitle;
+    }
 
     titleDiv.appendChild(itemNumDiv);
     titleDiv.appendChild(itemNameDiv);
