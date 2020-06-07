@@ -4,10 +4,14 @@
     <head>
         <!-- Import Fonts + Styles here. -->
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         
+
+        <!-- Bootstrap stuff for calendar -->
+        <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet' />
+
         <link href="../styles/globalStyles.css" type="text/css" rel="stylesheet">
-        <link href="../styles/weeklyschedule.css" type="text/css" rel="stylesheet">
     </head>
 
     <header>
@@ -16,19 +20,71 @@
             CS10
         </title>
         
-        <h1>
-            CS10: The Beauty and Joy of Computing
-        </h1>
+        <div style="display: flex; flex-direction: row; align-items: flex-end;">
+            <img src="../imgs/bjc-icon-transparent.png" style="max-height: 50px; max-width: 50px;">
+            <h1 style="margin-left: 20px;">
+                CS10: The Beauty and Joy of Computing
+            </h1>
+        </div>
 
         <!-- Navigation Bar. -->
-        <nav>
-            <a href="../../index.html">Home</a>
-            <a href="lectures.html">Lecture</a>
-            <a href="labs.html">Lab</a>
-            <a href="discussion.html">Discussion</a>
-            <a href="syllabus.html">Syllabus</a>
-            <a href="staff.html">Staff</a>
-            <a href="resources.html">Resources</a>
+        <nav style="margin-top: 20px;">
+            <a href="../../index.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        home
+                    </span>
+                    <div class="label">Home</div>
+                </div>
+            </a>
+            <a href="lectures.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        speaker_notes
+                    </span>
+                    <div class="label">Lecture</div>
+                </div>
+            </a>
+            <a href="labs.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        laptop
+                    </span>
+                    <div class="label">Labs</div>
+                </div>
+            </a>
+            <a href="discussion.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        people
+                    </span>
+                    <div class="label">Discussion</div>
+                </div>
+            </a>
+            <a href="syllabus.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        menu_book
+                    </span>
+                    <div class="label">Syllabus</div>
+                </div>
+            </a>
+            <a href="staff.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        contact_mail
+                    </span>
+                    <div class="label">Staff</div>
+                </div>
+            </a>
+            <a href="resources.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        library_books
+                    </span>
+                    <div class="label">Resources</div>
+                </div>
+            </a>
         </nav>
     </header>
 
