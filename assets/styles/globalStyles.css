@@ -55,6 +55,12 @@ h3 {
     color: #343f45;
 }
 
+h4 {
+    font-weight: 300;
+    font-size: 24px;
+    color: #1155cc;
+}
+
 /* Navigation Bar Styling */
 a {
     text-decoration: none;
@@ -230,14 +236,63 @@ a:hover {
 }
 
 /* Syllabus Styles */
-
-.headerName {
+.overview {
+    list-style-type: none;
+    font-weight: 200;
     font-size: 18px;
-    font-weight: 700;
+    color: #1155cc;
+    margin-bottom: 50px;
+}
+
+.overviewItem {
+    margin-bottom: 5px;
+}
+
+.syllabusSection {
+    margin-bottom: 25px;
+}
+
+.syllabusSubheader {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.syllabusSubsection {
+    font-weight: 200;
+    font-size: 18px;
+    color: #1155cc;
+    margin-bottom: 16px;
+}
+
+.syllabusContent {
+    font-weight: 100;
+    font-size: 16px;
+    color: #343f45;
+    margin-bottom: 25px;
 }
 
 .syllabusContainer {
     display: flex;
+}
+
+.staffContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.staffItem {
+    margin-right: 100px;
+}
+
+.staffEmail {
+    font-weight: 100;
+    font-size: 16px;
+    color: #343f45;
+}
+
+.weekday {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #sidebar {
