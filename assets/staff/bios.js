@@ -53,6 +53,15 @@ export const aaronBio = {
     "commitments" : "I’ll be teaching you, trying to soak up some info from my classes, managing the Sneak Previews department of ASUC SUPERB, and preparing to go abroad to Chile in the spring!"
 }
 
+export const maxsonBio = {
+    "backstory" : "",
+    "experience" : "",
+    "hobbies" : "",
+    "talents" : "",
+    "remarkableStuff" : "",
+    "commitments" : ""
+}
+
 // For the sake of copy pasta.
 // Note, you need to add export in front.
 const genericBio = {
