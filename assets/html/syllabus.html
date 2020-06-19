@@ -94,8 +94,12 @@
         <div class="syllabusContainer">
             <div id="sidebar">
                 <div id="sidebar-content">
-                    <a href="#description"><div>Course Description</div></a>
-                    <a href="#teaching-staff"><div>Teaching Staff</div></a>
+                    <a href="#course-communications"><div>Course Communications</div></a>
+                    <a href="#section-types"><div>Section Types</div></a>
+                    <a href="#weekly-schedule"><div>Typical Weekly Schedule</div></a>
+                    <a href="#assignments"><div>Assignments</div></a>
+                    <a href="#grading"><div>Grading Scheme</div></a>
+                    <a href="#academic-integrity"><div>Academic Integrity</div></a>
                 </div>
             </div>
             <!-- Syllabus Content -->
@@ -156,7 +160,7 @@
                             <li class="overviewItem">- Academic Integrity</li>
                         </ul>
                     
-                        <h4 id="description" class="syllabusSection">
+                        <h4 id="course-communications" class="syllabusSection">
                             Course Communications
                         </h4>
                         <div class="syllabusContent">We have a few platforms that we normally use for getting information out to you, as well as receiving information!</div>
@@ -187,7 +191,8 @@
                                             <div class="staffEmail">Kellyann Ye - <span style="color: #1155cc;">kellyann_ye@berkeley.edu</span></div>
                                     </div>
                                 </div>
-                    <h4 class="syllabusSection">Sections</h4>
+
+                    <h4 id="section-types" class="syllabusSection">Sections</h4>
                         <div class="syllabusSubsection">Flipped Lecture</div>
                             <div class="syllabusContent">This semester, we’ll mainly be delivering content through BJCx videos, which is essentially the national version of CS10. Instead of delivering a lecture via Zoom we’ll be taking a flipped classroom approach, spending our time reinforcing and diving deeper into the content talked about in the videos. We highly recommend watching the videos prior to attending these sections as we will be building upon the content, not reviewing them, so you might feel quite lost during these sections if you haven’t done so.</div>
                         <div class="syllabusSubsection">Discussion</div>
@@ -200,10 +205,208 @@
                             <div class="syllabusContent">Check-ins are short, weekly meetings you’ll have with your TA, where you can have a conversation with them about how you’re doing, how you’re feeling about the course and content, and anything else you’d like to talk about, really! We just want to make sure you’re doing well and feeling good about the course. These check-ins shouldn’t take more than 15 minutes, and will happen primarily on Fridays. If that’s not a good day for you though, feel welcome to reach out via email (found on the course website) and we’ll find something that works.</div>
                         <div class="syllabusSubsection">Social Implication Sessions</div>
                             <div class="syllabusContent">CS10 isn’t just a class that teaches programming! We also want to discuss the various impacts of computer science  and how they affect our broader society. As part of this goal, we’ll be having weekly readings and/or videos for you to check out regarding specific social implications topics. On Fridays, we’ll be having hour-long discussions pertaining to these weekly topics. If you don’t feel like this is the best venue to share your thoughts though, fret not! There’s an optional reading response you can do instead of having to attend these sessions.</div>
-                    <h4 class="syllabusSection">A typical week in CS10</h4>        
+                    
+                    <h4 id="weekly-schedule" class="syllabusSection">A typical week in CS10</h4>        
                         <h3 class="weekday">Monday - <span style="font-style: italic;">1h30m to 3h weekly</span></h3>
-                            <div class="syllabusSubsection">In class</div>
-                            
+                            <div class="scheduleSubsection">In class</div>
+                                <ul>
+                                    <li>-  Flipped Lecture review  - 1 hour</li>
+                                    <li>-  Lab - 2 hours (optional, but highly recommended!)</li>
+                                </ul>
+                            <div class="scheduleSubsection">Outside of class</div>
+                                <ul>
+                                    <li>-  Problem Set - 30m to 2 hours (depending on the assignment)</li>
+                                </ul>
+                        <hr>
+                        <h3 class="weekday">Tuesday - <span style="font-style: italic;">2h30m to 4h weekly</span></h3>
+                            <div class="scheduleSubsection">In class</div>
+                                <ul>
+                                    <li>-  Flipped Lecture review  - 1 hour</li>
+                                    <li>-  Discussion + Deeper Dives into content - 1 hour</li>
+                                    <li>-  Lab - 2 hours (optional, but highly recommended!)</li>
+                                </ul>
+                            <div class="scheduleSubsection">Outside of class</div>
+                                <ul>
+                                    <li>-  Problem Set - 30m to 2 hours (depending on the assignment)</li>
+                                </ul>
+                        <hr>
+                        <h3 class="weekday">Wednesday - <span style="font-style: italic;">1h30m to 3h weekly</span></h3>
+                            <div class="scheduleSubsection">In class</div>
+                                <ul>
+                                    <li>-  Flipped Lecture review  - 1 hour</li>
+                                    <li>-  Lab - 2 hours (optional, but highly recommended!)</li>
+                                </ul>
+                            <div class="scheduleSubsection">Outside of class</div>
+                                <ul>
+                                    <li>-  Problem Set - 30m to 2 hours (depending on the assignment)</li>
+                                </ul>
+                        <hr>
+                        <h3 class="weekday">Thursday - <span style="font-style: italic;">2h30m to 4h weekly</span></h3>
+                            <div class="scheduleSubsection">In class</div>
+                                <ul>
+                                    <li>-  Social Implications Discussion or Reading Response - 1 hour</li>
+                                    <li>-  Discussion + Deeper Dives into content - 1 hour</li>
+                                    <li>-  Lab - 2 hours (optional, but highly recommended!)</li>
+                                </ul>
+                            <div class="scheduleSubsection">Outside of class</div>
+                                <ul>
+                                    <li>-  Problem Set - 30m to 2 hours (depending on the assignment)</li>
+                                </ul>
+                        <hr>
+                        <h3 class="weekday">Friday - <span style="font-style: italic;">15m weekly</span></h3>
+                            <div class="scheduleSubsection">In class</div>
+                                <ul>
+                                    <li>-  Check-in with TA - 15 minutes</li>
+                                </ul>
+                            <div class="scheduleSubsection">Outside of class</div>
+                                <ul>
+                                    <li>-  Relax and refresh!</li>
+                                </ul>
+                                
+                        <h3 class="weeklyEstimate">Weekly Estimate: ~8h15m to 14h15m on regular per week*</h3>
+                            <div>*Note:</div>
+                                <ul>
+                                    <li>-  This doesn’t factor in webcasts and projects (and office hours), which we’ll talk about a little bit next.</li>
+                                    <li>-  It also assumes that if you finish you finish your problem set in the lab or at home. So 2 hours tops.</li>
+                                </ul>
+                        <h3 class="weekday">Additional weekly commitments</h3>
+                            <div class="scheduleSubsection">Webcasts</div>
+                                <div class="syllabusContent">Fortunately, the awesome professor Dan Garcia who built CS10, has recorded a series of videos covering CS10 content via BJCx. We’ll be using his videos to introduce content and so you should expect to watch about 20m-40m of videos each day prior to our flipped classroom discussions! These are the videos we’ll be covering in our “Flipped Lecture Reviews”.</div>
+                            <div class="scheduleSubsection">Projects</div>
+                                <div class="syllabusContent">There will also be two small projects that we’ll be doing as well as a larger final project you’ll build from the ground up! The time required for this tends to vary for students, but in the past students have been able to complete these projects in a timely manner. We recommend attending work sessions, and setting aside a few hours each day to ensure that you make good progress towards finishing!</div>
+                    
+                    <h4 id="assignments" class="syllabusSection">Assignments</h4> 
+                        <div class="syllabusSubsection">Problem Sets</div>
+                            <div class="syllabusContent">There will be Problem Sets given regularly after each lecture. These assignments build on the topics covered in lab and provide hands-on practice. Sometimes these assignments will involve a substantial amount of coding, other times they might be more conceptual and require some writing instead. Generally speaking, we strongly suggest completing these assignments within two days of their release to avoid getting overwhelmed by topics. Furthermore, we also highly recommend going to labs to finish up the assignments.</div>
+                        <div class="syllabusSubsection">Projects</div>
+                            <div class="syllabusContent">There will be three projects you’ll be working on this summer— two assigned by us, and one personal project that you get to design yourself! You’ll have roughly two weeks to complete the projects we assign, and about three weeks to complete your personal project.  Don’t worry, a TA will be helping to guide you through these projects, and there will be plenty of work sessions + office hours to get any additional help you need.</div>
+                        <div class="syllabusSubsection">Explore Post</div>
+                            <div class="syllabusContent">The Explore Post is a writing assignment where you’ll research any topic, application, and/or implication of computer science in a blog-style format. Later on, you’ll also get a chance to take a look at some of your other classmates’ posts, leaving your thoughts as comments in the process.</div>
+                        <div class="syllabusSubsection">Social Implications</div>
+                            <div class="syllabusContent">As mentioned earlier, we’ll be covering many social implications topics in the class. Furthermore, we’d love to hear your thoughts on these topics as we go through them! There will be two main ways you can express your take on the topics: in the social implications sections, or through a short reading response.</div>
+                        <h3 class="syllabusSubheader">Deadlines</h3>
+                            <div class="syllabusSubsection">Catch-all Deadlines</div>
+                                <div class="syllabusContent">This semester, we’ll have four “catch-all” deadlines that will occur every two weeks. What this means is that there will be a designated deadline where you need to get all assignments up until that point submitted.</div>
+                            <div class="syllabusSubsection">Early-bird Deadlines</div>
+                                <div class="syllabusContent">We’ll still be putting out some recommended deadlines to encourage you to avoid cramming work towards the end. You won’t be penalized for missing these deadlines, but, if you submit things by the suggested deadline, we’ll give you extra credit!</div>
+                            <div class="syllabusSubsection">Accommodations</div>
+                                <div class="syllabusContent">The guiding principle behind this deadline policy is to reduce the amount of stress that typically accompanies deadlines during summer, and to give you more control over the time you spend on  mastering the material. As such, in the event that you need some form of accommodations that aren’t afforded by these policies, feel free to reach out to your TA or the instructors, and we’ll figure something out!</div>
+                            <div class="syllabusSubsection">DSP Accommodations</div>
+                                <div class="syllabusContent">For those of you who require DSP accommodations, please reach out to Aaron and Maxson directly! We’ll work out any arrangements that need to be made to get you set for the course.</div>
+                    
+                    <h4 class="syllabusSection">Exams</h4>     
+                        <h3>Exam Dates</h3>    
+                            <div class="syllabusContent">We’ll be having <span style="color: #1155cc;">two exams:</span>  a midterm exam and a final exam. These exams will start and end on the dates below. Note that these times are based on Pacific Daylight Time (PDT), which is also GMT -07:00. If this presents an unfair disadvantage to you because of where you’re currently residing, please reach out to us!</div>
+                        <h3 style="color: #1155cc;">Midterm</h3>
+                            <div class="syllabusContent">Start Date: Friday July 18th, 12:00am PDT 
+                                <br> End Date: Monday, July 20th, 11:59pm PDT
+                                <br>Total time: 72 hours</div>
+                        <hr>
+                        <h3 style="color: #1155cc;">Final Exam</h3>
+                            <div class="syllabusContent">Start Date: Friday July 18th, 12:00am PDT
+                                <br>End Date: Monday, July 20th, 11:59pm PDT
+                                <br>Total time: 72 hours</div>
+                        <h3>Structure</h3>  
+                            <div class="syllabusContent">Exams in CS10 are fairly standard in format. There will always be two parts:
+                                <ol>
+                                    <li>“Paper” format</li>
+                                    <li>Coding Challenge</li>
+                                </ol>
+                            </div>
+                        <div class="scheduleSubsection">Exam Length</div>
+                            <div class="syllabusContent">Our paper exams are written to take two or three hours for the midterm and final exam respectively; both coding challenges are designed to take only an hour and thirty minutes. However, you’re welcome to utilize the full 72 hours, or allocate your time however you’d like during the exam period.</div>
+                    
+                    <h4 id="grading" class="syllabusSection">Grading Scheme</h4>  
+                        <div class="syllabusContent">The course will be graded out of 500 points, and there is no curve. The grading breakdown and bins can be found below.</div>
+                        <h3>Grading Breakdown</h3>
+                        <div class="gradeContainer">
+                            <div class="gradeItem">
+                                <div class="syllabusSubsection">Exams - 150 points</div>
+                                   <ul>
+                                       <li>-  Midterm - 50 points</li>
+                                       <li>-  Final Exam - 100 points</li>
+                                   </ul>
+                                <div class="syllabusSubsection">Projects - 225 points</div>
+                                   <ul>
+                                       <li>-  Project 1: Mastermind - 25 points</li>
+                                       <li>-  Project 2: 2048 - 50 points</li>
+                                       <li>-  Final Project - 125 points</li>
+                                       <li>-  Explore Post - 25 points</li>
+                                   </ul>
+                            </div>
+                            <div class="gradeItem">
+                                <div class="syllabusSubsection">Problem Sets - 75 points</div>
+                                    <ul>
+                                        <li>-  7 total- 12.5 points each</li>
+                                        <li>-  1 dropped problem set allowed</li>
+                                    </ul>
+                                <div class="syllabusSubsection">Community- 50 points</div>
+                                    <ul>
+                                        <li>-  7 weekly check-ins - 25 points total</li>
+                                        <li>-  6 SI sessions/responses - 25 points total</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <h3>Grading Ranges</h3>
+                            <div class="syllabusContent">We will be awarding the following grades based on the following point ranges:</div>
+                            <div style="margin-left: 300px;">
+                                <h4>A+: <span style="font-size: 20px;"> 475 - 500 points</span></h4>
+                                <h4>A: <span style="font-size: 20px;"> 442 - 476 points</span></h4>
+                                <h4>A-: <span style="font-size: 20px;"> 428 - 442 points</span></h4>
+                                <h4>B+: <span style="font-size: 20px;"> 415 - 428 points</span></h4>
+                                <h4>B: <span style="font-size: 20px;"> 385 - 428 points</span></h4>
+                                <h4>B-: <span style="font-size: 20px;"> 358 - 384 points</span></h4>
+                                <h4>C+: <span style="font-size: 20px;"> 321 - 357 points</span></h4>
+                                <h4>C: <span style="font-size: 20px;"> 300 - 320 points</span></h4>
+                                <h4>C-: <span style="font-size: 20px;"> 286 - 299 points</span></h4>
+                                <h4>D: <span style="font-size: 20px;"> 214 - 285 points</span></h4>
+                                <h4>F: <span style="font-size: 20px;"> &lt;213 points</span></h4>
+                            </div>
+                        <h3>P/NP Policy</h3>
+                        <div class="syllabusContent">In case you’re taking CS10 Pass/No Pass, getting a D in the course will be sufficient to pass the course. Furthermore, if you <span style="color: #1155cc;">complete all assignments on time</span> then you will be guaranteed to pass the course.</div>
+                    
+                    <h4 id="academic-integrity" class="syllabusSection">Flexibility + Extra Credit</h4>
+                        <div class="syllabusContent">There will be a variety of extra credit opportunities available for you! Here’s a rundown of all the ways you can rack up a substantial amount of extra credit.</div>
+                        <h3 class="syllabusSubheader">Flexibility</h3>
+                            <div class="syllabusSubsection">Early Bird Deadlines</div>
+                                <div class="syllabusContent">As mentioned in the Assignments section, while we’ll only have 4 fixed deadlines, if you get your assignments in by our suggested deadlines then you’ll be able to get extra credit! This will mainly be emphasized on the weekly homework assignments.</div>
+                            <div class="syllabusSubsection">Slip Days</div>
+                                <div class="syllabusContent">You will be granted one slip day for one of the four deadlines. A slip day allows you to extend the deadline period by one day with no penalty. For example, if you needed an extra day to get something in for the first deadline,</div>
+                            <div class="syllabusSubsection">EPA - Effort, Participation, Altruism</div>
+                                <div class="syllabusContent">EPA is a form of extra credit that we award invisibly at the end of the semester. Essentially, every TA will have an opportunity to award students with EPA points, up to 3 points in each category.</div>
+                                <div class="syllabusContent"><span style="color: #1155cc;">Effort</span> stands for the amount of work a TA has recognized that you put into the course. This can be observed through things like office hours, labs, and more.</div>
+                                <div class="syllabusContent"><span style="color: #1155cc;">Participation</span> includes being an active voice in discussions, posting and answering questions on Piazza (our Q&A forum), and getting involved with the course in other ways.</div>
+                                <div class="syllabusContent"><span style="color: #1155cc;">Altruism</span> points can be awarded for any observed efforts in helping your peers, sharing and posting helpful resources on Piazza for your peers, and any other work you put into furthering your peers’ understanding of the material.</div>
+                    <h4 class="syllabusSection">Academic Integrity</h4>
+                        <div class="syllabusContent">Maintaining academic integrity is a crucial part of your learning experience, as not only are there serious repercussions for academic dishonesty, but it also prevents us as instructors from understanding where our model of instruction isn’t working. Furthermore, we also understand that the nature of academia and its emphasis on grades might pressure you into lowering personal standards, especially if your grade in this class could impact long-term academic plans. However, there are ways to meet these goals that don’t require academically dishonest means, like reaching out to your TA to develop learning goals.</div>
+                        <div class="syllabusContent">Here, we’ll explicitly lay out our academic integrity policies and some good practices that can not only help you avoid academic dishonesty, but improve your overall mastery of the material.</div>
+                        <h3 class="syllabusSubheader">Cheating Policy</h3>
+                            <div class="syllabusSubsection">Redemption Period</div>
+                                <div class="syllabusContent">After submitting any form of work, you’ll have <span style="color: #1155cc;">24 hours</span> from when you submitted to notify a TA or instructor about any form of academic dishonesty you might have committed. In the email, clearly state what parts you did not complete honestly, and any sources you utilized. In the event that multiple individuals are involved, please make sure all individuals are cc’d in the email. We will remove points from the portions of the work you have plagiarized, but we will honor all other parts that have been completed honestly.</div>
+                                <div class="syllabusContent">Afterwards, we’ll follow up with an in-person meeting with you, where we can have a conversation about why you felt the need to cheat, how we as instructors could have better supported you, assess what content you need additional review for, and develop actionable learning goals so that we can all move forward feeling more confident about the course.</div>
+                                <div class="syllabusContent">We believe that while cheating shows a lapse in academic integrity, coming forward and owning up to it also demonstrates a substantial amount of integrity. While we can’t turn a blind eye to work that has been completed dishonestly, we can all still learn from this situation and move toward a path that results in your overall success in the course.</div>
+                            <div class="syllabusSubsection">Non-reported Cheating Cases</div>    
+                                <div class="syllabusSubsection">For any cases of academic dishonesty that are not reported to us within the 24-hour redemption period, we will unfortunately have to take harsher measures:</div>
+                                    <ol>
+                                        <li>You will receive full, negative points on the assignment you submitted dishonestly, including any extra credit points you recieved.</li>
+                                        <li>The event will be reported to the Center of Student Conduct, and will be recorded in your permanent academic record.</li>
+                                        <li>Your future work will be closely monitored and scrutinized for potential dishonesty.</li>
+                                    </ol>
+                            <div class="syllabusSubsection">Repeat offenses</div>
+                                <div class="syllabusContent">Whether or not you reported to us that you cheated, in the event that you’re caught cheating multiple times, you will immediately fail the course. Furthermore, in the event that you choose to retake the course to remedy the deficient grade, we will inform subsequent instructors of CS10 of your record.</div>
+                            <div class="syllabusSubsection">What if I didn’t cheat?</div>
+                                <div class="syllabusContent">We also acknowledge that there are times where there are false-positives for cheating that can be particularly hard to refute.  As such, if you are suspected of cheating, we will inform you and call you in for a meeting with the instructors where we will review the evidence, and provide you with an opportunity to voice your side of the story. Generally speaking, the best way to show that you didn’t cheat is to demonstrate your understanding of the material, and so we’ll most likely provide you with a similar/equivalent problem and ask you to implement it under our supervision.</div>   
+                                <div class="syllabusContent">In the event that we can’t reach a conclusion in the meeting, we’ll defer judgment to the Office of Student Conduct where they will provide their own judgment, and recommended course of action. From there on, the situation is mostly out of our hands, and we will follow the recommendations of the OSC.</div>
+                                <div class="syllabusContent">If we cannot resolve the cheating case within the summer semester, an incomplete (I) grade will be given to you until the issue is resolved in a subsequent semester.</div>
+                        <h3 class="syllabusSubheader">Cheating Policy</h3>
+                            <div class="syllabusSubsection">Discuss + Guide content like your TAs would!</div>
+                                <ol>
+                                    <li><span style="color: #1155cc;">Ask instead of telling.</span> If you’re working with your friends and one of them is stuck on a part of a problem set, don’t just tell them what they need to do, try to ask them questions that might’ve come up as you were trying to understand.</li>
+                                    <li><span style="color: #1155cc;">Keep things conceptual!</span> If you’re finding yourself explicitly telling your friend what they should be doing, that could very easily put you in breach of academic integrity.</li>
+                                    <li><span style="color: #1155cc;">Use different ways to communicate concepts.</span> Sometimes explaining things one way might not be quite understood by your peers, and it can be tempting to try to just give the answer. Drawing things out, using analogies, and any other ideas you might have could be particularly effective. Assuming it minimizes spoilers, this is something that we’d also be happy sharing with the rest of the class (garnering some EC while you’re at it).</li>
+                                </ol>
+                            <div class="syllabusSubsection">Work out academic goals with your TA</div>
+                                <div class="syllabusContent">All of our TAs have been with this course for quite a few semesters, and are very familiar with the content. As such, they’re well-equipped to help you navigate the course, both in the short and long term.</div>
             </div>
         </div>
     </body>

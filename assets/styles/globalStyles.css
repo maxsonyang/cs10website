@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     color: #343f45;
 }
@@ -164,7 +164,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     min-width: 300px;
 
 }
@@ -236,6 +235,17 @@ a:hover {
 }
 
 /* Syllabus Styles */
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-weight: 100;
+    font-size: 16px;
+    color: #343f45;
+    margin-bottom: 5px;
+}
+
 .overview {
     list-style-type: none;
     font-weight: 200;
@@ -249,11 +259,11 @@ a:hover {
 }
 
 .syllabusSection {
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
 .syllabusSubheader {
-    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -291,8 +301,34 @@ a:hover {
 }
 
 .weekday {
-    font-size: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+}
+
+hr {
+    color: #343f45;
+    margin-top: 40px;
+}
+
+.scheduleSubsection {
+    font-weight: 200;
+    font-size: 18px;
+    color: #1155cc;
+    margin-bottom: 5px;
+}
+
+.weeklyEstimate {
+    color: #1155cc;
+    margin-top: 50px;
+}
+
+.gradeContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.gradeItem {
+    margin-right: 100px;
 }
 
 #sidebar {
