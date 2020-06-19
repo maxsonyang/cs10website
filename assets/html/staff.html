@@ -4,35 +4,495 @@
     <head>
         <!-- Import Fonts + Styles here. -->
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         
-        <link href="../styles/globalStyles.css" type="text/css" rel="stylesheet">
-        <link href="../styles/weeklyschedule.css" type="text/css" rel="stylesheet">
-    </head>
 
+        <!-- Bootstrap stuff for calendar -->
+        <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet' />
+
+        <link href="../styles/globalStyles.css" type="text/css" rel="stylesheet">
+        <link href="../styles/staffStyles.css" type="text/css" rel="stylesheet">
+
+        <script src="../scripts/staffOverlay.js" type="module"></script>
+
+        <!-- Tab Icon -->
+        <link rel="icon" href="../imgs/bjc-icon-transparent.png">
+    </head>
     <header>
         <!-- Note that this does NOT change the webpage, but rather the tab content -->
         <title>
             CS10
         </title>
         
-        <h1>
-            CS10: The Beauty and Joy of Computing
-        </h1>
+        <div style="display: flex; flex-direction: row; align-items: flex-end;">
+            <img src="../imgs/bjc-icon-transparent.png" style="max-height: 50px; max-width: 50px;">
+            <h1 style="margin-left: 20px;">
+                CS10: The Beauty and Joy of Computing
+            </h1>
+        </div>
 
         <!-- Navigation Bar. -->
-        <nav>
-            <a href="../../index.html">Home</a>
-            <a href="lectures.html">Lecture</a>
-            <a href="labs.html">Lab</a>
-            <a href="discussion.html">Discussion</a>
-            <a href="syllabus.html">Syllabus</a>
-            <a href="staff.html">Staff</a>
-            <a href="resources.html">Resources</a>
+        <nav style="margin-top: 20px;">
+            <a href="../../index.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        home
+                    </span>
+                    <div class="label">Home</div>
+                </div>
+            </a>
+            <a href="lectures.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        speaker_notes
+                    </span>
+                    <div class="label">Lecture</div>
+                </div>
+            </a>
+            <a href="labs.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        laptop
+                    </span>
+                    <div class="label">Labs</div>
+                </div>
+            </a>
+            <a href="discussion.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        people
+                    </span>
+                    <div class="label">Discussion</div>
+                </div>
+            </a>
+            <a href="syllabus.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        menu_book
+                    </span>
+                    <div class="label">Syllabus</div>
+                </div>
+            </a>
+            <a href="staff.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        contact_mail
+                    </span>
+                    <div class="label">Staff</div>
+                </div>
+            </a>
+            <a href="resources.html">
+                <div class="navlabel">
+                    <span class="material-icons-round">
+                        library_books
+                    </span>
+                    <div class="label">Resources</div>
+                </div>
+            </a>
         </nav>
     </header>
 
     <body>
+        <div class="overlay">
+            <div class="card">
+                <div class="overlayHeader">
+                    <img src="/assets/staff/maxson/yike.jpg" class="overlayPicture">
+                    <div>
+                        <h1>
+                            Maxson Yang
+                        </h1>
+                        <h3>
+                            B.S. Conservation and Resource Studies
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="overlayBody">
+                    <div class="overlaySection">
+                        <h4>
+                            Where are you from? What was your path to Cal?
+                        </h4>
+                        <p>
+                            I grew up in a small city called West Covina which is like, 20 miles(???) from Downtown LA. I applied to Berkeley sort of on a whim; I planned to apply to three UCs and was pretty certain about applying to UCI and UCLA; I was left deciding between UCSD and Berkeley. I ended up picking Berkeley because there was less reading involved but now I’m here and it’s great!!
+                        </p>
+                    </div>
+                    <div class="overlaySection">
+                        <h4>
+                            How much programming have you done? What languages?
+                        </h4>
+                        <p>
+                            I've done quite a bit of programming since taking CS10. Languages I use most often 
+                            include Python, JavaScript, TypeScript, Swift, HTML, and CSS, as well as the framework React.
+                            Python's just a really popular coding language that has lots of fun quirks.
+                            Swift is the language of the future for iOS development.
+                            HTML, CSS, JS, TS, and React, are all commonly used in modern web development!
+                            If you like making things, I highly recommend checking all of these out at some point.
+                            Other languages I'm familiar with include Java, C, and C++
+                        </p>
+                    </div>
+                    <div class="overlaySection">
+                        <h4>
+                            What are your hobbies?
+                        </h4>
+                        <p>
+                            *cue existential crisis*
+                        </p>
+                    </div>
+                    <div class="overlaySection">
+                        <h4>
+                            Have you done anything remarkable? Has anything memorable happened to you?
+                        </h4>
+                        <p>
+                            I recently won the iHackHealth appathon, and now that's transitioned into a very early-stage startup!
+                            I also lost a spelling bee once because I forgot to include the 's' in congratulations.
+                        </p>
+                    </div>
+                    <div class="overlaySection">
+                        <h4>
+                            What commitments will be consuming your cycles this semester?
+                        </h4>
+                        <p>
+                            Building our start-up, doing CS Education Research with Professor Dan Garcia, and teaching!
+                            Also trying to pick up some new skills. What skills? Who knows? Who cares?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>
+                Your Instructors
+            </h1>
+            <div class="horizontalContent" style="justify-content: space-between;">
+
+                <div class="card">
+                    <div class="profileContent">
+                        <img src="/assets/staff/maxson/yike.jpg" class="profilePicture">
+                        <div class="profileDetails">
+                            <h4>
+                                Maxson Yang
+                            </h4>
+                            <h3>
+                                maxsonyang@berkeley.edu
+                            </h3>
+                            <div class="iconbar">
+                                <a href="">
+                                    <div class="navlabel">
+                                        <span class="material-icons-round">
+                                            portrait
+                                        </span>
+                                        <div class="label">bio</div>
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/maxson-y-4b6534105/">
+                                    <div class="navlabel">
+                                        <span class="material-icons-round">
+                                            web_asset
+                                        </span>
+                                        <div class="label">website</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="profileContent">
+                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQFVakD_Lmd5Cg/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=hXQmv7A6lkWMz82I-D3DR2xt404ePZvXIIIwWeRn4Gg" class="profilePicture">
+                        <div class="profileDetails">
+                            <h4>
+                                Aaron Baker
+                            </h4>
+                            <h3>
+                                aaron.baker@berkeley.edu
+                            </h3>
+                            <div class="iconbar">
+                                <a href="">
+                                    <div class="navlabel">
+                                        <span class="material-icons-round">
+                                            portrait
+                                        </span>
+                                        <div class="label">bio</div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="navlabel">
+                                        <span class="material-icons-round">
+                                            web_asset
+                                        </span>
+                                        <div class="label">website</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    Wanna know the definition of hacky? 
+                    This crap right here. These divs are used to push the rightmost content farther left.
+                -->
+                <div>
+                </div>
+                <div>
+                </div>
+
+            </div>
+        </div>
+
+        <h1>
+            Your TAs
+        </h1>
+        <div class="horizontalContent" style="justify-content: space-between;">
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQGQ1xFrAjwaeQ/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=BUIr7brvirEXig2mFLeYuiwyhNe4UWh7-FWE96eQyEQ" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Andrew Burke
+                        </h4>
+                        <h3>
+                            aburke225@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQGgNmMsii35dw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=xvnKWlHOFU_QgD3LEVIFRNTDbDlacCXUd_Pc6GmGdLA" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Dani Swords
+                        </h4>
+                        <h3>
+                            dani.swords@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 
+                Wanna know the definition of hacky? 
+                This crap right here. These divs are used to push the rightmost content farther left.
+            -->
+            <div>
+            </div>
+            <div>
+            </div>
+
+        </div>
+
+        <div class="horizontalContent" style="justify-content: space-between;">
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://ca.slack-edge.com/T02BLN36L-UFHSYPZ6V-4c71c87967e0-512" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Yolanda Shen
+                        </h4>
+                        <h3>
+                            yashen@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="http://yolandashen.me">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <!-- 
+                Wanna know the definition of hacky? 
+                This crap right here. These divs are used to push the rightmost content farther left.
+            -->
+            <div>
+            </div>
+            <div>
+            </div>
+
+        </div>
+
+        <h1>
+            Your Readers
+        </h1>
+        <div class="horizontalContent" style="justify-content: space-between;">
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://ca.slack-edge.com/T02BLN36L-UC84H8P6C-8cfbafeb12dc-512" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Kellyann Ye
+                        </h4>
+                        <h3>
+                            kellyann_ye@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://ca.slack-edge.com/T02BLN36L-UFJ8NCN1J-d00215eda5f1-512" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Samhita Sen
+                        </h4>
+                        <h3>
+                            samhita.sen@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 
+                Wanna know the definition of hacky? 
+                This crap right here. These divs are used to push the rightmost content farther left.
+            -->
+            <div>
+            </div>
+            <div>
+            </div>
+
+        </div>
+
+        <div class="horizontalContent" style="justify-content: space-between;">
+
+            <div class="card">
+                <div class="profileContent">
+                    <img src="https://ca.slack-edge.com/T02BLN36L-UC8JNFW76-ga6f463c7e4f-512" class="profilePicture">
+                    <div class="profileDetails">
+                        <h4>
+                            Lam Pham
+                        </h4>
+                        <h3>
+                            lampham468@berkeley.edu
+                        </h3>
+                        <div class="iconbar">
+                            <a href="">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        portrait
+                                    </span>
+                                    <div class="label">bio</div>
+                                </div>
+                            </a>
+                            <a href="http://yolandashen.me">
+                                <div class="navlabel">
+                                    <span class="material-icons-round">
+                                        web_asset
+                                    </span>
+                                    <div class="label">website</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 
+                Wanna know the definition of hacky? 
+                This crap right here. These divs are used to push the rightmost content farther left.
+            -->
+            <div>
+            </div>
+            <div>
+            </div>
+
+        </div>
+        
     </body>
 
 </html>
